@@ -20,6 +20,10 @@ public class AlunoService {
     public Aluno findById(Integer id){
         Optional<Aluno> aluno = repository.findById(id);
         return aluno.get();
+    }
+    /*para inserir aluno */
+    public Aluno insert(Aluno aluno){
+        return repository.save(aluno);
 
     }
     
